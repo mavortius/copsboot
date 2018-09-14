@@ -4,15 +4,20 @@ import com.example.copsboot.user.User;
 import com.example.copsboot.user.UserRepository;
 import com.example.copsboot.user.UserRole;
 import com.example.copsboot.user.Users;
+import com.example.orm.jpa.InMemoryUniqueIdGenerator;
+import com.example.orm.jpa.UniqueIdGenerator;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import org.springframework.boot.test.context.TestConfiguration;
+import org.springframework.context.annotation.Bean;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.HashSet;
 import java.util.Locale;
 import java.util.Optional;
+import java.util.UUID;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -64,5 +69,13 @@ public class UserRepositoryTest {
         Optional<User> optional = repository.findByEmailIgnoreCase("will_not@find.me");
 
         assertThat(optional).isEmpty();
+    }
+
+    @TestConfiguration
+    static class TestConfig {
+        @Bean
+        public UniqueIdGenerator<UUID> generator() {
+            return new InMemoryUniqueIdGenerator();
+        }
     }
 }
