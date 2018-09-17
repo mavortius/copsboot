@@ -1,4 +1,4 @@
-package com.example.orm.jpa;
+package com.example.copsboot.orm.jpa;
 
 import javax.persistence.MappedSuperclass;
 import java.io.Serializable;

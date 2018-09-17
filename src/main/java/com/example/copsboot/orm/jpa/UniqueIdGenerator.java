@@ -1,4 +1,4 @@
-package com.example.orm.jpa;
+package com.example.copsboot.orm.jpa;
 
 public interface UniqueIdGenerator<T> {
 

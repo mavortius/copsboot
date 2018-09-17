@@ -1,8 +1,7 @@
-package com.example.orm.jpa;
+package com.example.copsboot.orm.jpa;
 
 import javax.persistence.EmbeddedId;
 import javax.persistence.MappedSuperclass;
-
 import java.util.Objects;
 
 import static com.google.common.base.MoreObjects.toStringHelper;

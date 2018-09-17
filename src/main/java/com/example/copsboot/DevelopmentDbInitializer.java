@@ -1,7 +1,8 @@
 package com.example.copsboot;
 
+import com.example.copsboot.infrastructure.SpringProfiles;
 import com.example.copsboot.user.UserService;
-import com.example.infrastructure.SpringProfiles;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;

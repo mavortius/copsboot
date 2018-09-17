@@ -1,6 +1,6 @@
 package com.example.copsboot.user;
 
-import com.example.orm.jpa.AbstractEntityId;
+import com.example.copsboot.orm.jpa.AbstractEntityId;
 
 import java.util.UUID;
 

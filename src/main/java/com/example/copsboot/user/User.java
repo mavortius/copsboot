@@ -1,6 +1,6 @@
 package com.example.copsboot.user;
 
-import com.example.orm.jpa.AbstractEntity;
+import com.example.copsboot.orm.jpa.AbstractEntity;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
