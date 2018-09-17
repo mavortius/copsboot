@@ -25,6 +25,6 @@ public class DevelopmentDbInitializer implements ApplicationRunner {
     }
 
     private void createTestUsers() {
-        userService.createOfficer("office@example.com", "officer");
+        userService.createOfficer("officer@example.com", "officer");
     }
 }
